@@ -252,6 +252,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 /*enrich end*/
 
 /*add start */
@@ -259,6 +260,7 @@ body {
     background: #121118;
     padding: 180px 0;
 }
+
 .add-text h1 {
     color: #FFF;
     font-size: 54px;
@@ -290,18 +292,67 @@ body {
 .add-block {
     width: 571px;
     height: 367px;
-    background: red;
+    background: #1e1f22;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-block-one {
-    width: 75%;
+    padding-top: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 85%;
     height: 75px;
-    background: red;
-    border: 2px solid white;
+    background: #1e1f22;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
 }
 
+.add-block-two {
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 85%;
+    height: 75px;
+    background: #1e1f22;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
 
+.add-block-icon {
+    width: 40px;
+    height: 40px;
+    background: #1e1f22;
+    border-radius: 50%;
+    color: white;
+    font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-block-text h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.add-block-text h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.50);
+    padding-top: 8px;
+}
+
+.add-block-one button{
+    padding: 17px 30px ;
+    background: #f41624;
+    border-radius: 15px;
+}
 /*add end */
 
 /*link start*/
@@ -340,7 +391,7 @@ body {
 .link-blocks {
     width: 562px;
     height: 350px;
-    background: #FF4343;
+    background: #1e1f22;
     border-radius: 30px;
     display: flex;
     justify-content: end;
@@ -363,7 +414,7 @@ body {
 }
 
 .link-blocks a div:hover {
-    transform:translateY(-50px);
+    transform: translateY(-50px);
     border-radius: 20px;
     z-index: 2;
     -webkit-box-shadow: 0 0 48px 40px rgba(228, 238, 245, 0.2);
@@ -379,7 +430,7 @@ body {
 }
 
 .instagram {
-    background:#d2005a;
+    background: #d2005a;
     border-radius: 20px 0 0 0;
     right: 360px;
 }
@@ -393,7 +444,7 @@ body {
 .tiktok {
     background: #020203;
     border-radius: 20px 0 0 0;
-    right:240px ;
+    right: 240px;
 }
 
 .twitter {
@@ -419,18 +470,356 @@ body {
     border-radius: 20px 0 30px 0;
     right: 0;
 }
+
 /*link end*/
 
+/*card start*/
+#card {
+    padding: 130px 0;
+    background: #121118;
+}
+.card h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 83px;
+}
 
+.line {
+    width: 120px;
+    height: 5px;
+    background: #f41624;
+    margin: 38px auto;
+}
 
+.card p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 37px;
+    padding-bottom: 88px;
+}
 
+.card-general {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.card-block {
+    width: 19%;
+    position: relative;
+}
 
+.card-block img {
+    width: 100%;
+}
 
+.card-block-text h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 34px;
+}
 
+.card-block-text h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0 5px 0;
+}
 
+.card-block-text h5 {
+    color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 50px;
+}
 
+.card-block-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 31.25%, #000 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
+.card-block-text {
+    display: none;
+}
 
+.card-block:hover>.card-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
+.card-block-text:hover > .card-block-text h3,
+.card-block-text:hover > .card-block-text h4,
+.card-block-text:hover > .card-block-text h5{
+    animation: text .4s alternate linear;
+}
 
+@keyframes text {
+    0% {
+        transform: translateY(50px);
+    }
+}
+
+/*card end */
+
+/*offer start*/
+#offer {
+    padding: 175px;
+    background: #121118;
+}
+.offer h6 {
+    color: #8BFFB0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    /*line-height: 24px;*/
+    padding-bottom: 21px;
+}
+
+.offer h1 {
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 83px;
+    display: flex;
+}
+
+.offer p {
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39px;
+
+}
+
+.offer img {
+    width: 940px;
+    height: 834px;
+    padding: 70px 18px ;
+}
+
+.offer off-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+/*offer end */
+
+/*what start*/
+#what {
+    width: 100%;
+    height: 433px;
+    background: #121118;
+}
+
+.what {
+    width: 1120px;
+    height: 433px;
+    border-radius: 30px;
+    background: #1D1B24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.what h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 91px;
+}
+
+.what p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    padding: 65px 0;
+}
+
+.what button {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    gap: 19px;
+    background:#FF4343;
+    padding: 5px 30px;
+    border:2px solid #FF4343;
+}
+
+.what button:hover {
+    background: transparent;
+    border: 2px solid #FF4343;
+    color:#FF4343;
+}
+
+.what button ion-icon {
+    width: 50px;
+    padding-left: 19px;
+    height: 52px;
+}
+/*what end*/
+
+/*lesson start*/
+#lesson {
+    background: url("./img/lesson.png") no-repeat center/cover;
+    min-height: 60vh;
+}
+.lesson-shadow {
+    min-height: 60vh;
+    background: linear-gradient(180deg, #1D1B24 0%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.lesson h2 {
+    padding: 148px 0 0 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.lesson p {
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+/*lesson end*/
+
+/*courses start*/
+#courses {
+    background: #0A0A0A;
+}
+
+.courses-block-general {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses h2 {
+    color: #FFF;
+    font-size: 58px;
+    font-weight: 400;
+    padding-top: 170px;
+    padding-bottom: 109px;
+}
+
+.courses-one h6 {
+    color: #FFF;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.courses-one a {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.courses-block {
+    display: flex;
+    align-items: center;
+}
+
+.courses-text {
+    width: 369px;
+    height: 449px;
+    background: rgba(139, 255, 176, 0.77);
+    padding: 30px 30px;
+}
+
+.courses-text h6 {
+    color: rgb(149, 254, 193);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.courses-text h3 {
+    width: 209px;
+    color: #FFF;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.courses-text p {
+    width: 302px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.courses-text button {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    background: #8c2bcc;
+    padding: 10px 25px;
+    border: 2px solid #8c2bcc;
+    flex-direction: row-reverse;
+
+}
+
+.courses-text button:hover {
+    background: transparent;
+    border: 2px solid #8c2bcc;
+    color: #8c2bcc;
+}
+
+.courses-text ion-icon {
+    padding-left: 15px;
+
+}
+
+.courses-block h6 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.courses-block a {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+/*curses end*/
